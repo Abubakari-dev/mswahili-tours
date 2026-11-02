@@ -138,22 +138,22 @@ export const Kilimanjaro: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
             Africa's Highest Peak · 5,895 m
           </p>
           <h1
             className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}
           >
             Mount Kilimanjaro
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
             Conquer the Roof of Africa with Mswahili's certified mountain guides — dedicated to leading you safely to Uhuru Peak.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeInUp stagger-4">
@@ -169,7 +169,7 @@ export const Kilimanjaro: React.FC = () => {
 
             {/* Text */}
             <div>
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
                 Overview
               </p>
               <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-4"
@@ -177,7 +177,7 @@ export const Kilimanjaro: React.FC = () => {
                 The Roof of Africa
               </h2>
               <div className="w-10 h-[3px] bg-[#C8A45C] mb-7" />
-              <div className="space-y-5 text-[#4A4035] text-[15px] leading-[1.95]">
+              <div className="space-y-5 text-[#4A4035] text-[16px] leading-[1.95]">
                 <p>
                   Mt. Kilimanjaro is one of the world's most accessible high summits and a true definition
                   of natural wonder. Located near Moshi town in northern Tanzania, it stands at
@@ -202,7 +202,7 @@ export const Kilimanjaro: React.FC = () => {
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-[#C8A45C] flex-shrink-0 mt-0.5" />
-                    <span className="text-[#4A4035] text-[13px]">{item}</span>
+                    <span className="text-[#4A4035] text-[14px]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -239,7 +239,7 @@ export const Kilimanjaro: React.FC = () => {
 
           {/* ── Why Bucket List ── */}
           <div className="mb-16 pb-16 border-b border-[#EAE4D9]">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               The Ultimate Challenge
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-4"
@@ -247,7 +247,7 @@ export const Kilimanjaro: React.FC = () => {
               Why Mt. Kilimanjaro Should Be On Your Bucket List?
             </h2>
             <div className="w-10 h-[3px] bg-[#C8A45C] mb-8" />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#4A4035] text-[15px] leading-[1.95]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#4A4035] text-[16px] leading-[1.95]">
               <p>
                 Many conclude climbing Mount Kilimanjaro to be the highlight experience in Tanzania. As Kilimanjaro
                 is one of the world's most accessible high summits in the world, reaching Uhuru Peak is an adventure
@@ -264,7 +264,7 @@ export const Kilimanjaro: React.FC = () => {
 
           {/* ── Trekking Routes ── */}
           <div className="mb-10">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               Choosing Your Path
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-4"
@@ -274,7 +274,7 @@ export const Kilimanjaro: React.FC = () => {
             <div className="w-10 h-[3px] bg-[#C8A45C] mb-8" />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#4A4035] text-[15px] leading-[1.95]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-[#4A4035] text-[16px] leading-[1.95]">
             <div className="space-y-5">
               <p>
                 Climbing to Uhuru Peak takes <strong>5 to 9 days</strong> depending on the route. The more days,
@@ -318,7 +318,7 @@ export const Kilimanjaro: React.FC = () => {
 
           {/* Header */}
           <div className="text-center mb-12">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-3">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-3">
               Before You Climb
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -336,10 +336,10 @@ export const Kilimanjaro: React.FC = () => {
               { label: 'Short Rains', period: 'November – Mid-January',   note: 'Brief showers, still climbable' },
             ].map((s) => (
               <div key={s.label} className="text-center">
-                <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.22em] uppercase mb-2">{s.label}</p>
-                <p className="text-[#1B2A4A] font-bold text-[15px] mb-1">{s.period}</p>
+                <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.22em] uppercase mb-2">{s.label}</p>
+                <p className="text-[#1B2A4A] font-bold text-[16px] mb-1">{s.period}</p>
                 <div className="w-6 h-[2px] bg-[#C8A45C]/50 mx-auto mb-2" />
-                <p className="text-[#6B6259] text-[12.5px]">{s.note}</p>
+                <p className="text-[#6B6259] text-[13px]">{s.note}</p>
               </div>
             ))}
           </div>
@@ -357,9 +357,9 @@ export const Kilimanjaro: React.FC = () => {
                   <img src={iconSun} alt="Daytime" className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.2em] uppercase mb-0.5">Daytime</p>
+                  <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.2em] uppercase mb-0.5">Daytime</p>
                   <p className="text-[#1B2A4A] font-bold text-[20px]">70° – 90°F</p>
-                  <p className="text-[#6B6259] text-[12px]">At 3,000 – 7,000 ft altitude</p>
+                  <p className="text-[#6B6259] text-[13px]">At 3,000 – 7,000 ft altitude</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -367,22 +367,22 @@ export const Kilimanjaro: React.FC = () => {
                   <img src={iconMoon} alt="Night" className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.2em] uppercase mb-0.5">Night</p>
+                  <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.2em] uppercase mb-0.5">Night</p>
                   <p className="text-[#1B2A4A] font-bold text-[20px]">50° – 60°F</p>
-                  <p className="text-[#6B6259] text-[12px]">Cool, layers recommended</p>
+                  <p className="text-[#6B6259] text-[13px]">Cool, layers recommended</p>
                 </div>
               </div>
             </div>
 
             {/* Description */}
             <div className="lg:col-span-2">
-              <p className="text-[#4A4035] text-[14.5px] leading-[1.9] mb-6">
+              <p className="text-[#4A4035] text-[15px] leading-[1.9] mb-6">
                 Tanzania enjoys a comfortable climate year-round, though conditions vary significantly by region.
                 The tropical coast is hot and humid, while the central plateau is cooler and arid. At the altitudes
                 of Kilimanjaro's lower slopes (3,000–7,000 ft), daytime temperatures are very comfortable — warm
                 enough for light layers, cool enough to keep your energy up on the trail.
               </p>
-              <p className="text-[#6B6259] text-[13px] leading-[1.8] italic border-l-2 border-[#C8A45C]/40 pl-4">
+              <p className="text-[#6B6259] text-[14px] leading-[1.8] italic border-l-2 border-[#C8A45C]/40 pl-4">
                 These are averages — weather can be unpredictable. Check current conditions a few days before
                 departure and verify the forecast for each stop on your itinerary, as conditions may vary.
               </p>
@@ -404,7 +404,7 @@ export const Kilimanjaro: React.FC = () => {
 
           {/* Header */}
           <div className="text-center mb-14">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               Plan Your Summit
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -412,7 +412,7 @@ export const Kilimanjaro: React.FC = () => {
               Trekking Routes
             </h2>
             <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mx-auto mb-6" />
-            <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-2xl mx-auto">
+            <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-2xl mx-auto">
               Six primary routes lead to Uhuru Peak. Summiting typically takes <strong>5 to 9 days</strong> —
               longer itineraries significantly improve your acclimatization and summit success rate.
             </p>
@@ -420,7 +420,7 @@ export const Kilimanjaro: React.FC = () => {
 
           {/* Route selector — tabs */}
           <div className="bg-[#F8F5F0] rounded-2xl p-6 sm:p-8">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-5">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-5">
               Select a Route
             </p>
 
@@ -430,7 +430,7 @@ export const Kilimanjaro: React.FC = () => {
                 {routes.map((r, i) => (
                   <button key={r.name} onClick={() => setActiveRoute(i)}
                     className={[
-                      'px-4 py-3 text-[11px] font-bold tracking-[0.16em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
+                      'px-4 py-3 text-[12.5px] font-bold tracking-[0.16em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
                       activeRoute === i
                         ? 'text-[#8B6914] border-[#C8A45C]'
                         : 'text-[#9B8E80] border-transparent hover:text-[#8B6914]',
@@ -456,7 +456,7 @@ export const Kilimanjaro: React.FC = () => {
                           className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0A1220]/60 via-transparent to-transparent" />
                         <div className="absolute bottom-4 right-4">
-                          <span className="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[11px] font-semibold px-3.5 py-1.5 rounded-full">
+                          <span className="bg-black/40 backdrop-blur-md border border-white/20 text-white text-[12.5px] font-semibold px-3.5 py-1.5 rounded-full">
                             {r.days}
                           </span>
                         </div>
@@ -468,20 +468,20 @@ export const Kilimanjaro: React.FC = () => {
                   <div className={isEven ? 'lg:order-2' : 'lg:order-1'}>
                     <h3 className="font-serif text-[24px] font-bold text-[#8B6914] italic mb-1">{r.name}</h3>
                     <div className="w-8 h-[2px] bg-[#C8A45C] mb-5" />
-                    <p className="text-[#4A4035] text-[14.5px] leading-[1.9] mb-6 whitespace-pre-line">{r.desc}</p>
+                    <p className="text-[#4A4035] text-[15px] leading-[1.9] mb-6 whitespace-pre-line">{r.desc}</p>
 
                     {/* Highlights */}
                     <div className="grid grid-cols-2 gap-x-4 gap-y-2 mb-7 pb-6 border-b border-[#E4DDD3]">
                       {r.highlights.map((h) => (
                         <div key={h} className="flex items-center gap-2">
                           <Check className="w-3.5 h-3.5 text-[#C8A45C] flex-shrink-0" />
-                          <span className="text-[#4A4035] text-[12.5px]">{h}</span>
+                          <span className="text-[#4A4035] text-[13px]">{h}</span>
                         </div>
                       ))}
                     </div>
 
                     <a href={`/book?type=kilimanjaro&route=${r.name.split(' ')[0].toLowerCase()}`}
-                      className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[10.5px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_10px_rgba(27,42,74,0.18)]">
+                      className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_10px_rgba(27,42,74,0.18)]">
                       Book This Route <ChevronRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -499,7 +499,7 @@ export const Kilimanjaro: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
           <div className="text-center mb-14">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               Extend Your Journey
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -507,7 +507,7 @@ export const Kilimanjaro: React.FC = () => {
               Combine Your Climb With a Safari
             </h2>
             <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mx-auto mb-6" />
-            <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-2xl mx-auto">
+            <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-2xl mx-auto">
               Tanzania's iconic wildlife parks are just a short drive from Kilimanjaro's base. Make the most
               of your trip by pairing your summit with an unforgettable safari.
             </p>
@@ -545,7 +545,7 @@ export const Kilimanjaro: React.FC = () => {
                 {/* Default overlay — title visible always */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/75 via-[#050E1C]/10 to-transparent transition-opacity duration-500 group-hover:opacity-0" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-2">
-                  <span className="bg-[#C8A45C] text-[#0F1829] text-[9px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full mb-3 inline-block">
+                  <span className="bg-[#C8A45C] text-[#0F1829] text-[11px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full mb-3 inline-block">
                     {item.tag}
                   </span>
                   <h3 className="text-white font-bold text-[17px] leading-snug">{item.title}</h3>
@@ -555,12 +555,12 @@ export const Kilimanjaro: React.FC = () => {
                 <div className="absolute inset-0 bg-[#050E1C]/88 flex flex-col justify-center px-7 py-8
                   opacity-0 translate-y-3 transition-all duration-500
                   group-hover:opacity-100 group-hover:translate-y-0">
-                  <span className="bg-[#C8A45C] text-[#0F1829] text-[9px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full mb-4 self-start">
+                  <span className="bg-[#C8A45C] text-[#0F1829] text-[11px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full mb-4 self-start">
                     {item.tag}
                   </span>
                   <h3 className="text-white font-bold text-[18px] mb-3 leading-snug">{item.title}</h3>
                   <div className="w-8 h-[2px] bg-[#C8A45C] mb-4" />
-                  <p className="text-white/80 text-[13.5px] leading-[1.85]">{item.desc}</p>
+                  <p className="text-white/80 text-[14px] leading-[1.85]">{item.desc}</p>
                 </div>
 
               </div>

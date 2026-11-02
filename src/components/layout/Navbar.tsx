@@ -16,13 +16,13 @@ const TopBar: React.FC = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 h-9 flex items-center justify-between">
       <div className="flex items-center gap-5">
         <a href="tel:+255750877628"
-          className="flex items-center gap-1.5 text-[10.5px] font-medium text-[#0F1829]/70 hover:text-[#0F1829] transition-colors">
+          className="flex items-center gap-1.5 text-[12px] font-medium text-[#0F1829]/70 hover:text-[#0F1829] transition-colors">
           <Phone className="w-2.5 h-2.5 text-[#0F1829]/70" />
           +255 750 877 628
         </a>
         <div className="w-px h-3 bg-[#0F1829]/20" />
         <a href="mailto:info@mswahilitours.co.tz"
-          className="flex items-center gap-1.5 text-[10.5px] font-medium text-[#0F1829]/70 hover:text-[#0F1829] transition-colors">
+          className="flex items-center gap-1.5 text-[12px] font-medium text-[#0F1829]/70 hover:text-[#0F1829] transition-colors">
           <Mail className="w-2.5 h-2.5 text-[#0F1829]/70" />
           info@mswahilitours.co.tz
         </a>
@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
 
   const linkCls = ({ isActive, extra }: { isActive: boolean; extra?: boolean }) => [
     'relative flex items-center gap-1',
-    'text-[11px] font-bold tracking-[0.08em] uppercase',
+    'text-[12.5px] font-bold tracking-[0.08em] uppercase',
     'py-1 transition-colors duration-200 select-none whitespace-nowrap',
     'after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px]',
     'after:bg-[#C8A45C] after:rounded-full',
@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-40">
+      <div className="fixed top-0 left-0 right-0 z-40 font-nav">
         {/* Top bar */}
         <div className={[
           'overflow-hidden transition-all duration-300',
@@ -106,8 +106,8 @@ export const Navbar: React.FC = () => {
                 <img src={logo} alt="Mswahili Tours"
                   className="w-10 h-10 rounded-xl object-contain ring-2 ring-[#C8A45C]/40 group-hover:ring-[#C8A45C]/80 transition-all" />
                 <div className="leading-tight">
-                  <p className="font-serif font-bold text-[15px] text-white group-hover:text-[#C8A45C] transition-colors">Mswahili</p>
-                  <p className="font-serif italic text-[#C8A45C] text-[11px] -mt-0.5">Tours &amp; Safaris</p>
+                  <p className="font-nav font-bold text-[16px] text-white group-hover:text-[#C8A45C] transition-colors">Mswahili</p>
+                  <p className="font-nav italic text-[#C8A45C] text-[12.5px] -mt-0.5">Tours &amp; Safaris</p>
                 </div>
               </Link>
             </div>
@@ -131,10 +131,10 @@ export const Navbar: React.FC = () => {
                   <div className="absolute inset-0 rounded-full bg-[#C8A45C]/15 blur-md scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 </div>
                 <div className="flex flex-col leading-tight">
-                  <span className="font-serif font-bold text-[18px] lg:text-[20px] text-white group-hover:text-[#C8A45C] transition-colors duration-200 tracking-tight">
+                  <span className="font-nav font-bold text-[18px] lg:text-[20px] text-white group-hover:text-[#C8A45C] transition-colors duration-200 tracking-tight">
                     Mswahili
                   </span>
-                  <span className="font-serif italic text-[#C8A45C]/80 text-[12px] font-normal -mt-0.5 tracking-wide">
+                  <span className="font-nav italic text-[#C8A45C]/80 text-[13px] font-normal -mt-0.5 tracking-wide">
                     Tours &amp; Safaris
                   </span>
                 </div>
@@ -176,7 +176,7 @@ export const Navbar: React.FC = () => {
 
                 {/* Plan a Trip CTA */}
                 <Link to="/book"
-                  className="inline-flex items-center whitespace-nowrap bg-[#C8A45C] hover:bg-[#b8913f] text-[#0F1829] text-[10px] font-bold tracking-[0.14em] uppercase px-5 py-2.5 rounded-sm shadow-[0_2px_14px_rgba(200,164,92,0.30)] hover:shadow-[0_4px_22px_rgba(200,164,92,0.50)] transition-all duration-200">
+                  className="inline-flex items-center whitespace-nowrap bg-[#C8A45C] hover:bg-[#b8913f] text-[#0F1829] text-[12px] font-bold tracking-[0.14em] uppercase px-5 py-2.5 rounded-sm shadow-[0_2px_14px_rgba(200,164,92,0.30)] hover:shadow-[0_4px_22px_rgba(200,164,92,0.50)] transition-all duration-200">
                   Plan a Trip
                 </Link>
 
@@ -270,12 +270,12 @@ const DropItem: React.FC<{
     ].join(' ')} />
     <div>
       <p className={[
-        'text-[12.5px] font-semibold leading-snug transition-colors duration-200',
+        'text-[13px] font-semibold leading-snug transition-colors duration-200',
         highlight ? 'text-[#C8A45C]' : 'text-white/80 group-hover:text-white',
       ].join(' ')}>
         {title}
       </p>
-      <p className="text-[10.5px] text-white/30 group-hover:text-white/45 leading-snug mt-0.5 transition-colors duration-200">
+      <p className="text-[12px] text-white/30 group-hover:text-white/45 leading-snug mt-0.5 transition-colors duration-200">
         {desc}
       </p>
     </div>

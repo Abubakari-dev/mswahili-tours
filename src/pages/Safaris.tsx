@@ -241,19 +241,19 @@ export const Safaris: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
             Tanzania · East Africa
           </p>
           <h1 className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300, fontStyle: 'italic',
+              fontWeight: 500, fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}>
             Tanzania Safaris
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
             From the endless plains of the Serengeti to the remote wilderness of Katavi — discover Tanzania's extraordinary national parks.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeInUp stagger-4">
@@ -268,13 +268,13 @@ export const Safaris: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-1">
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">Why Tanzania</p>              <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] leading-snug"
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">Why Tanzania</p>              <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] leading-snug"
                 style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)' }}>
                 Africa's Greatest Safari Destination
               </h2>
               <div className="w-10 h-[3px] bg-[#C8A45C] mt-5" />
             </div>
-            <div className="lg:col-span-2 space-y-5 text-[#4A4035] text-[15.5px] leading-[2]">
+            <div className="lg:col-span-2 space-y-5 text-[#4A4035] text-[16px] leading-[2]">
               <p>
                 Tanzania protects almost 40% of its land area in national parks, game reserves and conservation areas — more than almost any other country on Earth. From the world-famous Northern Circuit to the remote western parks where chimpanzees roam lakeside forests, Tanzania offers a safari experience for every type of traveller.
               </p>
@@ -291,7 +291,7 @@ export const Safaris: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
           <div className="text-center mb-12">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">Where We Go</p>
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">Where We Go</p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
               style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)' }}>
               Tanzania's National Parks &amp; Reserves
@@ -302,7 +302,7 @@ export const Safaris: React.FC = () => {
           {/* Circuit tabs — no card, open background */}
           <div className="mb-12">
 
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-5">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-5">
               Select a Circuit
             </p>
 
@@ -311,7 +311,7 @@ export const Safaris: React.FC = () => {
                 {circuits.map((c, i) => (
                   <button key={c.id} onClick={() => setActiveCircuit(i)}
                     className={[
-                      'px-5 py-3 text-[11px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
+                      'px-5 py-3 text-[12.5px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
                       activeCircuit === i
                         ? 'text-[#8B6914] border-[#C8A45C]'
                         : 'text-[#9B8E80] border-transparent hover:text-[#8B6914]',
@@ -323,7 +323,7 @@ export const Safaris: React.FC = () => {
             </div>
 
             {/* Circuit description */}
-            <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-3xl">
+            <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-3xl">
               {circuit.desc}
             </p>
 
@@ -344,7 +344,7 @@ export const Safaris: React.FC = () => {
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0A1220]/55 via-transparent to-transparent" />
                     <div className="absolute top-5 left-5">
-                      <span className="bg-[#C8A45C] text-[#0F1829] text-[9px] font-bold tracking-[0.22em] uppercase px-3 py-1.5 rounded-full">
+                      <span className="bg-[#C8A45C] text-[#0F1829] text-[11px] font-bold tracking-[0.22em] uppercase px-3 py-1.5 rounded-full">
                         {park.badge}
                       </span>
                     </div>
@@ -353,13 +353,13 @@ export const Safaris: React.FC = () => {
                   {/* Content */}
                   <div className={`flex flex-col justify-between flex-1 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                     <div>
-                      <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.38em] uppercase mb-3">
+                      <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.38em] uppercase mb-3">
                         {circuit.label}
                       </p>
                       <h3 style={{
-                        fontFamily: "'Fraunces', Georgia, serif",
+                        fontFamily: 'var(--font-serif)',
                         fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
-                        fontWeight: 300,
+                        fontWeight: 500,
                         fontStyle: 'italic',
                         color: '#1B2A4A',
                         lineHeight: 1.1,
@@ -367,7 +367,7 @@ export const Safaris: React.FC = () => {
                         {park.name}
                       </h3>
                       <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mb-6" />
-                      <p className="text-[#4A4035] text-[15px] leading-[1.95] mb-7 whitespace-pre-line">
+                      <p className="text-[#4A4035] text-[16px] leading-[1.95] mb-7 whitespace-pre-line">
                         {park.short}
                       </p>
                     </div>
@@ -376,10 +376,10 @@ export const Safaris: React.FC = () => {
                     <div className="pt-5 border-t border-[#EAE4D9]">
                       <div className="flex items-center gap-5">
                         <a href={`/book?type=${park.id}`}
-                          className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[10.5px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_10px_rgba(27,42,74,0.18)]">
+                          className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_10px_rgba(27,42,74,0.18)]">
                           Book Now <ChevronRight className="w-3.5 h-3.5" />
                         </a>
-                        <span className="text-[#9B8E80] text-[12.5px]">
+                        <span className="text-[#9B8E80] text-[13px]">
                           Best time: <span className="text-[#4A4035] font-medium">{park.bestTime}</span>
                         </span>
                       </div>
@@ -400,13 +400,13 @@ export const Safaris: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
             <div>
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">Ready to Go?</p>
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">Ready to Go?</p>
               <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
                 style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)' }}>
                 Plan Your Perfect Safari
               </h2>
               <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mb-6" />
-              <p className="text-[#4A4035] text-[15px] leading-[1.9]">
+              <p className="text-[#4A4035] text-[16px] leading-[1.9]">
                 Our expert team will design a bespoke safari itinerary around your interests, budget, and travel dates — from the northern plains to the remote western forests.
               </p>
             </div>

@@ -98,7 +98,7 @@ const BestTimeSection: React.FC<{ imgNungwi: string; imgDiving: string; imgDhow:
 
         {/* Left — season list */}
         <div>
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">When to Visit</p>
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">When to Visit</p>
           <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-4"
             style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)' }}>
             Best Time for Zanzibar
@@ -111,14 +111,14 @@ const BestTimeSection: React.FC<{ imgNungwi: string; imgDiving: string; imgDhow:
                 className={`flex items-start gap-4 px-5 py-4 rounded-xl border ${
                   s.best ? 'bg-[#C8A45C]/08 border-[#C8A45C]/30' : 'bg-[#F8F5F0] border-[#EAE4D9]'
                 }`}>
-                <span className={`flex-shrink-0 mt-0.5 text-[8.5px] font-bold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full whitespace-nowrap ${
+                <span className={`flex-shrink-0 mt-0.5 text-[11px] font-bold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full whitespace-nowrap ${
                   s.best ? 'bg-[#C8A45C] text-[#0F1829]' : 'bg-[#1B2A4A] text-white'
                 }`}>
                   {s.badge}
                 </span>
                 <div>
-                  <p className="font-bold text-[#1B2A4A] text-[13.5px] mb-1">{s.full}</p>
-                  <p className="text-[#6B6259] text-[13px] leading-[1.75]">{s.desc}</p>
+                  <p className="font-bold text-[#1B2A4A] text-[14px] mb-1">{s.full}</p>
+                  <p className="text-[#6B6259] text-[14px] leading-[1.75]">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -141,7 +141,7 @@ const BestTimeSection: React.FC<{ imgNungwi: string; imgDiving: string; imgDhow:
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
           </div>
-          <p className="text-[#6B6259] text-[12.5px] italic border-l-2 border-[#C8A45C]/40 pl-4 mt-1 leading-relaxed">
+          <p className="text-[#6B6259] text-[13px] italic border-l-2 border-[#C8A45C]/40 pl-4 mt-1 leading-relaxed">
             Ocean temperature stays at 25–29°C year-round — swimming and snorkelling are always on the menu.
           </p>
         </div>
@@ -183,7 +183,7 @@ export const Zanzibar: React.FC = () => {
           {/* Eyebrow with line */}
           <div className="flex items-center justify-center gap-4 mb-6 animate-fadeInUp stagger-1">
             <div className="h-px w-12 bg-[#C8A45C]/70" />
-            <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.50em] uppercase">
+            <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.50em] uppercase">
               The Spice Island · Indian Ocean
             </p>
             <div className="h-px w-12 bg-[#C8A45C]/70" />
@@ -193,9 +193,9 @@ export const Zanzibar: React.FC = () => {
           <h1
             className="text-white mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 10vw, 8rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               lineHeight: 0.9,
               textShadow: '0 4px 40px rgba(0,0,0,0.30)',
@@ -226,7 +226,7 @@ export const Zanzibar: React.FC = () => {
         {/* Scroll indicator */}
         <div className="absolute bottom-10 right-10 flex flex-col items-center gap-3 opacity-30">
           <div className="w-px h-14 bg-white" />
-          <span className="text-white text-[9px] tracking-[0.4em] uppercase">Scroll</span>
+          <span className="text-white text-[11px] tracking-[0.4em] uppercase">Scroll</span>
         </div>
       </section>
 
@@ -237,11 +237,11 @@ export const Zanzibar: React.FC = () => {
           {/* Top — heading + text + highlights + button */}
           <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-20 items-start mb-12">
             <div>
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">Overview</p>
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">Overview</p>
               <h2 style={{
-                fontFamily: "'Fraunces', Georgia, serif",
+                fontFamily: 'var(--font-serif)',
                 fontSize: 'clamp(1.7rem, 4vw, 3.2rem)',
-                fontWeight: 300,
+                fontWeight: 500,
                 fontStyle: 'italic',
                 color: '#1B2A4A',
                 lineHeight: 1.1,
@@ -251,7 +251,7 @@ export const Zanzibar: React.FC = () => {
               <div className="w-10 h-[3px] bg-[#C8A45C] mt-5" />
             </div>
 
-            <div className="space-y-5 text-[#4A4035] text-[15.5px] leading-[2]">
+            <div className="space-y-5 text-[#4A4035] text-[16px] leading-[2]">
               <p>
                 Zanzibar is a semi-autonomous archipelago lying off the sun-drenched coast of Tanzania —
                 an island world comprising the main island of Unguja alongside Pemba, Mafia and dozens of
@@ -274,7 +274,7 @@ export const Zanzibar: React.FC = () => {
                   <div key={item}
                     className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#C8A45C] flex-shrink-0" />
-                    <span className="text-[#4A4035] text-[13px]">{item}</span>
+                    <span className="text-[#4A4035] text-[14px]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -312,11 +312,11 @@ export const Zanzibar: React.FC = () => {
           {/* Header */}
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] items-end gap-6 mb-12">
             <div>
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-3">What to Do</p>
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-3">What to Do</p>
               <h2 style={{
-                fontFamily: "'Fraunces', Georgia, serif",
+                fontFamily: 'var(--font-serif)',
                 fontSize: 'clamp(2rem, 3.5vw, 3rem)',
-                fontWeight: 300,
+                fontWeight: 500,
                 fontStyle: 'italic',
                 color: '#1B2A4A',
                 lineHeight: 1.1,
@@ -333,7 +333,7 @@ export const Zanzibar: React.FC = () => {
               {tabs.map((t, i) => (
                 <button key={t.id} onClick={() => setActiveTab(i)}
                   className={[
-                    'px-5 py-3.5 text-[11px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
+                    'px-5 py-3.5 text-[12.5px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
                     activeTab === i
                       ? 'text-[#8B6914] border-[#C8A45C]'
                       : 'text-[#9B8E80] border-transparent hover:text-[#1B2A4A]',
@@ -360,11 +360,11 @@ export const Zanzibar: React.FC = () => {
 
                 {/* Text */}
                 <div className={`flex flex-col justify-center py-4 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.40em] uppercase mb-4">{t.sub}</p>
+                  <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.40em] uppercase mb-4">{t.sub}</p>
                   <h3 style={{
-                    fontFamily: "'Fraunces', Georgia, serif",
+                    fontFamily: 'var(--font-serif)',
                     fontSize: 'clamp(2rem, 3vw, 2.8rem)',
-                    fontWeight: 300,
+                    fontWeight: 500,
                     fontStyle: 'italic',
                     color: '#1B2A4A',
                     lineHeight: 1.1,
@@ -372,12 +372,12 @@ export const Zanzibar: React.FC = () => {
                     {t.title}
                   </h3>
                   <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mb-7" />
-                  <p className="text-[#4A4035] text-[15px] leading-[2] mb-8 whitespace-pre-line">
+                  <p className="text-[#4A4035] text-[16px] leading-[2] mb-8 whitespace-pre-line">
                     {t.body}
                   </p>
                   <div>
                     <a href="/book?type=zanzibar"
-                      className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[10.5px] font-bold tracking-[0.18em] uppercase px-7 py-3.5 rounded-sm transition-colors duration-200 shadow-[0_2px_14px_rgba(27,42,74,0.20)] hover:shadow-[0_4px_22px_rgba(27,42,74,0.35)]">
+                      className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12px] font-bold tracking-[0.18em] uppercase px-7 py-3.5 rounded-sm transition-colors duration-200 shadow-[0_2px_14px_rgba(27,42,74,0.20)] hover:shadow-[0_4px_22px_rgba(27,42,74,0.35)]">
                       Book This Experience <ChevronRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -398,13 +398,13 @@ export const Zanzibar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
           <div className="text-center mb-14">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">Extend Your Journey</p>
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">Extend Your Journey</p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
               style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)' }}>
               Combine Zanzibar With a Safari
             </h2>
             <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mx-auto mb-6" />
-            <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-2xl mx-auto">
+            <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-2xl mx-auto">
               Zanzibar pairs perfectly with Tanzania's world-famous safari circuit. Track the Big Five on the savannah, then unwind on a pristine Indian Ocean beach.
             </p>
           </div>
@@ -432,17 +432,17 @@ export const Zanzibar: React.FC = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1220]/40 via-transparent to-transparent" />
                   <div className="absolute top-5 left-5">
-                    <span className="bg-[#C8A45C] text-[#0F1829] text-[9px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full">
+                    <span className="bg-[#C8A45C] text-[#0F1829] text-[11px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full">
                       {item.badge}
                     </span>
                   </div>
                 </div>
                 <h3 className="font-serif text-[22px] font-bold text-[#8B6914] italic mb-3">{item.title}</h3>
                 <div className="w-8 h-[2px] bg-[#C8A45C] mb-5" />
-                <p className="text-[#4A4035] text-[14.5px] leading-[1.9] flex-1">{item.desc}</p>
+                <p className="text-[#4A4035] text-[15px] leading-[1.9] flex-1">{item.desc}</p>
                 <div className="mt-7">
                   <a href={item.link}
-                    className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[11px] font-bold tracking-[0.15em] uppercase px-7 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(27,42,74,0.20)]">
+                    className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12.5px] font-bold tracking-[0.15em] uppercase px-7 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(27,42,74,0.20)]">
                     Explore Packages <ChevronRight className="w-3.5 h-3.5" />
                   </a>
                 </div>

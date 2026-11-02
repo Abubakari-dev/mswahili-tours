@@ -210,19 +210,19 @@ export const TravelInfo: React.FC = () => {
         <div className="absolute inset-0 bg-[#050E1C]/55" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
             Plan Your Journey
           </p>
           <h1 className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300, fontStyle: 'italic',
+              fontWeight: 500, fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}>
             Travel Information
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
             Everything you need to know before your Tanzania adventure — visa, health, packing, money, and more.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeInUp stagger-4">
@@ -238,7 +238,7 @@ export const TravelInfo: React.FC = () => {
 
           {/* Header */}
           <div className="mb-12">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               Practical Guide
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -254,7 +254,7 @@ export const TravelInfo: React.FC = () => {
               {sections.map((s, i) => (
                 <button key={s.id} onClick={() => setActive(i)}
                   className={[
-                    'px-4 py-3 text-[10.5px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
+                    'px-4 py-3 text-[12px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px whitespace-nowrap',
                     active === i
                       ? 'text-[#8B6914] border-[#C8A45C]'
                       : 'text-[#9B8E80] border-transparent hover:text-[#8B6914]',
@@ -280,12 +280,12 @@ export const TravelInfo: React.FC = () => {
                 {current.paragraphs.map((p, i) => (
                   <div key={i}>
                     {p.heading && (
-                      <p className="font-bold text-[#1B2A4A] text-[14px] uppercase tracking-wide mb-2 flex items-center gap-2">
+                      <p className="font-bold text-[#1B2A4A] text-[15px] uppercase tracking-wide mb-2 flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#C8A45C] flex-shrink-0" />
                         {p.heading}
                       </p>
                     )}
-                    <p className="text-[#4A4035] text-[14.5px] leading-[1.95]">
+                    <p className="text-[#4A4035] text-[15px] leading-[1.95]">
                       {p.text}
                     </p>
                   </div>
@@ -298,14 +298,14 @@ export const TravelInfo: React.FC = () => {
 
               {/* Topic nav */}
               <div className="bg-white rounded-2xl border border-[#EAE4D9] p-6">
-                <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.32em] uppercase mb-4">
+                <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.32em] uppercase mb-4">
                   All Topics
                 </p>
                 <div className="space-y-1">
                   {sections.map((s, i) => (
                     <button key={s.id} onClick={() => setActive(i)}
                       className={[
-                        'w-full text-left px-3 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-200 flex items-center gap-2.5',
+                        'w-full text-left px-3 py-2.5 rounded-xl text-[14px] font-medium transition-all duration-200 flex items-center gap-2.5',
                         active === i
                           ? 'bg-[#C8A45C]/10 text-[#8B6914]'
                           : 'text-[#6B6259] hover:bg-[#F8F5F0] hover:text-[#1B2A4A]',
@@ -319,10 +319,10 @@ export const TravelInfo: React.FC = () => {
 
               {/* CTA */}
               <div className="bg-[#1B2A4A] rounded-2xl p-6">
-                <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.32em] uppercase mb-3">
+                <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.32em] uppercase mb-3">
                   Ready to Book?
                 </p>
-                <p className="text-white/60 text-[13px] leading-relaxed mb-5">
+                <p className="text-white/60 text-[14px] leading-relaxed mb-5">
                   Our team is available 7 days a week to answer travel questions and help plan your perfect Tanzania journey.
                 </p>
                 <Button to="/book" variant="primary" size="md">Plan a Trip</Button>

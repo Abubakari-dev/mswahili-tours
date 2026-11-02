@@ -33,9 +33,9 @@ export const Button: React.FC<ButtonProps> = ({
 
   /* ── Sizes ────────────────────────────────────────── */
   const sizes: Record<string, string> = {
-    sm: 'text-[0.65rem] px-5 py-2   min-h-[36px]',
-    md: 'text-[0.7rem]  px-6 py-2.5 min-h-[42px]',
-    lg: 'text-[0.75rem] px-8 py-3.5 min-h-[50px]',
+    sm: 'text-[12px] px-5 py-2   min-h-[36px]',
+    md: 'text-[12px]  px-6 py-2.5 min-h-[42px]',
+    lg: 'text-[12px] px-8 py-3.5 min-h-[50px]',
   };
 
   /* ── Variants ─────────────────────────────────────── */

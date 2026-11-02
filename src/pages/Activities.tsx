@@ -31,22 +31,22 @@ export const Activities: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
             Experiences · Tanzania
           </p>
           <h1
             className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}
           >
             Activities
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
             From dawn game drives on the Serengeti to floating above it all in a hot air balloon —
             every activity is guided by local experts who know this land intimately.
           </p>
@@ -62,7 +62,7 @@ export const Activities: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
           <div className="text-center mb-14">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               What We Offer
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -97,7 +97,7 @@ export const Activities: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0A1220]/55 via-transparent to-transparent" />
                     {activity.badge && (
                       <div className="absolute top-5 left-5">
-                        <span className="bg-[#C8A45C] text-[#0F1829] text-[9px] font-bold tracking-[0.22em] uppercase px-3 py-1.5 rounded-full">
+                        <span className="bg-[#C8A45C] text-[#0F1829] text-[11px] font-bold tracking-[0.22em] uppercase px-3 py-1.5 rounded-full">
                           {activity.badge}
                         </span>
                       </div>
@@ -107,33 +107,33 @@ export const Activities: React.FC = () => {
                   {/* Content */}
                   <div className={`flex flex-col justify-between flex-1 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                     <div>
-                      <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.38em] uppercase mb-3">
+                      <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.38em] uppercase mb-3">
                         {activity.category}
                       </p>
                       <h3 style={{
-                        fontFamily: "'Fraunces', Georgia, serif",
+                        fontFamily: 'var(--font-serif)',
                         fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
-                        fontWeight: 300,
+                        fontWeight: 500,
                         fontStyle: 'italic',
                         color: '#1B2A4A',
                         lineHeight: 1.1,
                       }}>
                         {activity.title}
                       </h3>
-                      <p className="text-[#C8A45C] text-[13px] font-medium mt-2 mb-4">
+                      <p className="text-[#C8A45C] text-[14px] font-medium mt-2 mb-4">
                         {activity.tagline}
                       </p>
                       <div className="w-10 h-[3px] bg-[#C8A45C] mb-6" />
-                      <p className="text-[#4A4035] text-[15px] leading-[1.95] mb-5">
+                      <p className="text-[#4A4035] text-[16px] leading-[1.95] mb-5">
                         {activity.overview}
                       </p>
                       {activity.id === 'waterfalls' || activity.id === 'historical-sites' || activity.id === 'camping'
                         || activity.id === 'cultural-village-tours' || activity.id === 'coffee-tours'
                         || activity.id === 'fishing' || activity.id === 'bird-watching' || activity.id === 'boat-safari' ? (
-                        <p className="text-[#4A4035] text-[14.5px] leading-[1.95]"
+                        <p className="text-[#4A4035] text-[15px] leading-[1.95]"
                           dangerouslySetInnerHTML={{ __html: activity.longDescription }} />
                       ) : (
-                        <p className="text-[#4A4035] text-[14.5px] leading-[1.95]">
+                        <p className="text-[#4A4035] text-[15px] leading-[1.95]">
                           {activity.longDescription}
                         </p>
                       )}
@@ -141,7 +141,7 @@ export const Activities: React.FC = () => {
                       {/* Hot springs — inline bold names in paragraph */}
                       {activity.id === 'hot-springs' && (
                         <div className="mt-6">
-                          <p className="text-[#4A4035] text-[14.5px] leading-[1.95]">
+                          <p className="text-[#4A4035] text-[15px] leading-[1.95]">
                             Tanzania is home to several remarkable hot springs. The most notable include{' '}
                             <strong>Kikuletwa (Chemka Hot Springs)</strong> near Moshi/Arusha — warm, crystal-clear water perfect for swimming;{' '}
                             <strong>Maji Moto Kubwa</strong> in Lake Manyara National Park — scalding and sulfuric, ideal for safari sightseeing; and{' '}
@@ -155,10 +155,10 @@ export const Activities: React.FC = () => {
                     <div className="pt-6 border-t border-[#EAE4D9]">
                       <div className="flex items-center gap-5">
                         <a href={`/book?activity=${activity.id}`}
-                          className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[10.5px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_10px_rgba(27,42,74,0.18)]">
+                          className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_10px_rgba(27,42,74,0.18)]">
                           Book Now <ChevronRight className="w-3.5 h-3.5" />
                         </a>
-                        <span className="text-[#9B8E80] text-[12.5px]">
+                        <span className="text-[#9B8E80] text-[13px]">
                           Best time: <span className="text-[#4A4035] font-medium">{activity.bestTime}</span>
                         </span>
                       </div>
@@ -176,7 +176,7 @@ export const Activities: React.FC = () => {
       {/* ══ 3. CTA ═══════════════════════════════════ */}
       <section className="bg-white py-16 sm:py-24 border-t border-[#EAE4D9]">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
             Custom Itinerary
           </p>
           <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -184,7 +184,7 @@ export const Activities: React.FC = () => {
             Can't Decide? We'll Help.
           </h2>
           <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mx-auto mb-6" />
-          <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-xl mx-auto mb-10">
+          <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-xl mx-auto mb-10">
             Our local experts will combine activities into a seamless itinerary tailored
             exactly to your interests, timeline, and budget.
           </p>

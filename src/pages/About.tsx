@@ -67,22 +67,22 @@ export const About: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
             Arusha, Tanzania
           </p>
           <h1
             className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}
           >
             About Us
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
             Your dedicated partners in crafting unforgettable journeys across Tanzania's most iconic landscapes.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeInUp stagger-4">
@@ -96,14 +96,14 @@ export const About: React.FC = () => {
       <section className="bg-white py-16 sm:py-24 border-b border-[#EAE4D9]">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
-          <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.45em] uppercase mb-6">
+          <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.45em] uppercase mb-6">
             About Mswahili Tours &amp; Safaris
           </p>
 
           <h2 style={{
-            fontFamily: "'Fraunces', Georgia, serif",
+            fontFamily: 'var(--font-serif)',
             fontSize: 'clamp(1.8rem, 4vw, 3.8rem)',
-            fontWeight: 300,
+            fontWeight: 500,
             fontStyle: 'italic',
             color: '#1B2A4A',
             lineHeight: 1.1,
@@ -113,7 +113,7 @@ export const About: React.FC = () => {
 
           <div className="w-12 h-[3px] bg-[#C8A45C] mb-8" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-[#4A4035] text-[15.5px] leading-[2] mb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-[#4A4035] text-[16px] leading-[2] mb-10">
             <p>
               Mswahili Tours &amp; Safaris stands out as more than just a tour operator —
               we are your dedicated partners in crafting unforgettable journeys. Nestled in
@@ -141,9 +141,9 @@ export const About: React.FC = () => {
         <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
           <div className="w-8 h-[2px] bg-[#C8A45C] mx-auto mb-8" />
           <blockquote style={{
-            fontFamily: "'Fraunces', Georgia, serif",
+            fontFamily: 'var(--font-serif)',
             fontSize: 'clamp(1.4rem, 3vw, 2.2rem)',
-            fontWeight: 300,
+            fontWeight: 500,
             fontStyle: 'italic',
             color: '#1B2A4A',
             lineHeight: 1.55,
@@ -151,7 +151,7 @@ export const About: React.FC = () => {
             "Every journey we craft is a story waiting to be written — one that honours the land, its people, and the wildlife that makes Tanzania the world's greatest safari destination."
           </blockquote>
           <div className="w-8 h-[2px] bg-[#C8A45C] mx-auto mt-8" />
-          <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.35em] uppercase mt-6">
+          <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.35em] uppercase mt-6">
             Mswahili Tours &amp; Safaris · Arusha, Tanzania
           </p>
         </div>
@@ -163,7 +163,7 @@ export const About: React.FC = () => {
 
           {/* Header */}
           <div className="text-center mb-14">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               Why Choose Us
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -171,14 +171,14 @@ export const About: React.FC = () => {
               Tanzania, Deeply Known
             </h2>
             <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mx-auto mb-6" />
-            <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-2xl mx-auto">
+            <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-2xl mx-auto">
               We operate exclusively in Tanzania — giving us unmatched depth of knowledge
               of every park, route, beach, and cultural landmark this extraordinary country has to offer.
             </p>
           </div>
 
           {/* Two column paragraphs */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-[#4A4035] text-[15px] leading-[1.95] mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 text-[#4A4035] text-[16px] leading-[1.95] mb-12">
             <p>
               Our guides are certified, our vehicles maintained to the highest standards, and
               our commitment to responsible tourism means that the communities and ecosystems
@@ -201,8 +201,8 @@ export const About: React.FC = () => {
               <div key={f.label} className="flex items-start gap-4">
                 <div className="w-1 h-10 bg-[#C8A45C] flex-shrink-0 mt-1 rounded-full" />
                 <div>
-                  <p className="font-bold text-[#1B2A4A] text-[13.5px] mb-1">{f.label}</p>
-                  <p className="text-[#6B6259] text-[13px] leading-relaxed">{f.desc}</p>
+                  <p className="font-bold text-[#1B2A4A] text-[14px] mb-1">{f.label}</p>
+                  <p className="text-[#6B6259] text-[14px] leading-relaxed">{f.desc}</p>
                 </div>
               </div>
             ))}
@@ -221,7 +221,7 @@ export const About: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-14 items-end">
             <div className="lg:col-span-2">
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
                 What Drives Us
               </p>
               <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -232,7 +232,7 @@ export const About: React.FC = () => {
             </div>
             <div className="text-right hidden lg:block">
               <a href="/book"
-                className="inline-flex items-center gap-2 text-[#C8A45C] text-[11px] font-bold tracking-[0.18em] uppercase hover:gap-3 transition-all duration-200">
+                className="inline-flex items-center gap-2 text-[#C8A45C] text-[12.5px] font-bold tracking-[0.18em] uppercase hover:gap-3 transition-all duration-200">
                 Work With Us <ChevronRight className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -244,14 +244,14 @@ export const About: React.FC = () => {
               <div key={v.number}
                 className="grid grid-cols-1 sm:grid-cols-[60px_200px_1fr] gap-3 sm:gap-6 py-5 items-baseline">
                 <p className="text-[#C8A45C]/25 font-bold text-[28px] leading-none select-none hidden sm:block"
-                  style={{ fontFamily: "'Fraunces', Georgia, serif" }}>
+                  style={{ fontFamily: 'var(--font-serif)' }}>
                   {v.number}
                 </p>
-                <h3 className="font-bold text-[#1B2A4A] text-[13px] uppercase tracking-wide flex items-center gap-2 sm:block">
-                  <span className="text-[#C8A45C]/30 font-bold text-[20px] sm:hidden" style={{ fontFamily: "'Fraunces', Georgia, serif" }}>{v.number}</span>
+                <h3 className="font-bold text-[#1B2A4A] text-[14px] uppercase tracking-wide flex items-center gap-2 sm:block">
+                  <span className="text-[#C8A45C]/30 font-bold text-[20px] sm:hidden" style={{ fontFamily: 'var(--font-serif)' }}>{v.number}</span>
                   {v.title}
                 </h3>
-                <p className="text-[#6B6259] text-[13.5px] leading-[1.75]">
+                <p className="text-[#6B6259] text-[14px] leading-[1.75]">
                   {v.desc}
                 </p>
               </div>
@@ -268,11 +268,11 @@ export const About: React.FC = () => {
         <div className="absolute inset-0 bg-[#050E1C]/50" />
         <div className="absolute inset-0 flex items-center justify-center text-center px-6">
           <div>
-            <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.40em] uppercase mb-4">Ready to Explore?</p>
+            <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.40em] uppercase mb-4">Ready to Explore?</p>
             <h2 style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2rem, 5vw, 4rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               color: 'white',
               lineHeight: 1.1,
@@ -289,7 +289,7 @@ export const About: React.FC = () => {
       {/* ══ 6. PARTNERS ══════════════════════════════ */}
       <section className="bg-white py-16 sm:py-20 border-t border-[#EAE4D9] overflow-hidden">
         <div className="max-w-3xl mx-auto px-6 text-center mb-12">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
             Accreditations &amp; Memberships
           </p>
           <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-4"
@@ -307,7 +307,7 @@ export const About: React.FC = () => {
                 <img src={p.img} alt={p.name}
                   className="w-full h-full object-contain p-1.5" />
               </div>
-              <p className="mt-2.5 text-[10px] font-bold tracking-wider uppercase text-[#9B8E80] group-hover:text-[#C8A45C] transition-colors duration-300 whitespace-nowrap">
+              <p className="mt-2.5 text-[12px] font-bold tracking-wider uppercase text-[#9B8E80] group-hover:text-[#C8A45C] transition-colors duration-300 whitespace-nowrap">
                 {p.name}
               </p>
             </div>

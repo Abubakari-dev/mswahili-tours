@@ -52,22 +52,22 @@ export const Tours: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
              Arusha, Tanzania
           </p>
           <h1
             className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}
           >
             Mswahili Tours &amp; Safaris
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed mb-10 font-light animate-fadeInUp stagger-3">
             Africa's leading destination management company — crafting unforgettable journeys across Tanzania's most iconic landscapes.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fadeInUp stagger-4">
@@ -84,7 +84,7 @@ export const Tours: React.FC = () => {
 
             {/* Text */}
             <div>
-              <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+              <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
                 Discover Tanzania
               </p>
               <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-4"
@@ -92,7 +92,7 @@ export const Tours: React.FC = () => {
                 Why Tanzania Safari?
               </h2>
               <div className="w-10 h-[3px] bg-[#C8A45C] mb-7" />
-              <p className="text-[#4A4035] text-[15px] leading-[1.95]">
+              <p className="text-[#4A4035] text-[16px] leading-[1.95]">
                 Tanzania is one of Africa's top safari destinations. This vibrant and beautiful country,
                 with exceptional parks and reserves, is blessed with unparalleled game viewing and
                 dazzling tropical beaches. From the Great Migration of the Serengeti to the remote parks,
@@ -146,7 +146,7 @@ export const Tours: React.FC = () => {
 
           {/* Header */}
           <div className="text-center mb-14">
-            <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+            <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
               Extend Your Journey
             </p>
             <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -179,7 +179,7 @@ export const Tours: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1220]/40 via-transparent to-transparent" />
                   {/* Floating label */}
                   <div className="absolute top-5 left-5">
-                    <span className="bg-[#C8A45C] text-[#0F1829] text-[9px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full">
+                    <span className="bg-[#C8A45C] text-[#0F1829] text-[11px] font-bold tracking-[0.20em] uppercase px-3 py-1.5 rounded-full">
                       {i === 0 ? 'Trekking' : 'Beach & Culture'}
                     </span>
                   </div>
@@ -190,12 +190,12 @@ export const Tours: React.FC = () => {
                   {item.title}
                 </h3>
                 <div className="w-8 h-[2px] bg-[#C8A45C] mb-5" />
-                <p className="text-[#4A4035] text-[14.5px] leading-[1.9] flex-1">
+                <p className="text-[#4A4035] text-[15px] leading-[1.9] flex-1">
                   {item.body}
                 </p>
                 <div className="mt-7">
                   <a href={item.link}
-                    className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[11px] font-bold tracking-[0.15em] uppercase px-7 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(27,42,74,0.20)] hover:shadow-[0_4px_20px_rgba(27,42,74,0.35)]">
+                    className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12.5px] font-bold tracking-[0.15em] uppercase px-7 py-3 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(27,42,74,0.20)] hover:shadow-[0_4px_20px_rgba(27,42,74,0.35)]">
                     Explore Packages <ChevronRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -232,7 +232,7 @@ const DestinationsCarousel: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
         <div className="mb-12 text-center">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-3">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-3">
             Explore Tanzania
           </p>
           <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -251,7 +251,7 @@ const DestinationsCarousel: React.FC = () => {
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/75 via-[#050E1C]/10 to-transparent" />
               <div className="absolute inset-0 flex items-end p-4">
-                <p className="text-white font-semibold text-[13px] leading-snug group-hover:text-[#C8A45C] transition-colors duration-300">
+                <p className="text-white font-semibold text-[14px] leading-snug group-hover:text-[#C8A45C] transition-colors duration-300">
                   {d.name}
                 </p>
               </div>
@@ -308,7 +308,7 @@ const WeatherSection: React.FC = () => {
 
         {/* ── Header ── */}
         <div className="text-center mb-14">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
             Planning Your Trip
           </p>
           <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A]"
@@ -316,7 +316,7 @@ const WeatherSection: React.FC = () => {
             Best Time &amp; Weather Guide
           </h2>
           <div className="w-10 h-[3px] bg-[#C8A45C] mt-4 mx-auto mb-5" />
-          <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-2xl mx-auto">
+          <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-2xl mx-auto">
             Tanzania is accessible all year round. Each season offers a unique safari experience —
             from the dramatic Great Migration to lush green landscapes and budget-friendly lodges.
           </p>
@@ -332,20 +332,20 @@ const WeatherSection: React.FC = () => {
             <div key={s.season}
               className={`border rounded-2xl px-6 py-5 hover:shadow-[0_4px_20px_rgba(27,42,74,0.08)] transition-shadow duration-300 ${s.color}`}>
               <div className="flex items-start justify-between gap-3 mb-3">
-                <p className="font-bold text-[#1B2A4A] text-[15px]">{s.season}</p>
-                <span className={`flex-shrink-0 text-[9px] font-bold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full ${s.badge}`}>
+                <p className="font-bold text-[#1B2A4A] text-[16px]">{s.season}</p>
+                <span className={`flex-shrink-0 text-[11px] font-bold tracking-[0.18em] uppercase px-2.5 py-1 rounded-full ${s.badge}`}>
                   {s.label}
                 </span>
               </div>
-              <p className="text-[#C8A45C] text-[11.5px] font-semibold mb-2">{s.months}</p>
-              <p className="text-[#6B6259] text-[13px] leading-relaxed">{s.desc}</p>
+              <p className="text-[#C8A45C] text-[12.5px] font-semibold mb-2">{s.months}</p>
+              <p className="text-[#6B6259] text-[14px] leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
 
         {/* ── Month tabs ── */}
         <div className="bg-[#F8F5F0] rounded-2xl p-6 sm:p-8">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-5">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-5">
             Monthly Weather Details
           </p>
 
@@ -355,7 +355,7 @@ const WeatherSection: React.FC = () => {
               {monthlyWeather.map((m, i) => (
                 <button key={m.month} onClick={() => setActive(i)}
                   className={[
-                    'px-3.5 py-2.5 text-[10.5px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px',
+                    'px-3.5 py-2.5 text-[12px] font-bold tracking-[0.18em] uppercase transition-all duration-200 border-b-2 -mb-px',
                     active === i
                       ? 'text-[#8B6914] border-[#C8A45C]'
                       : 'text-[#9B8E80] border-transparent hover:text-[#8B6914]',
@@ -371,7 +371,7 @@ const WeatherSection: React.FC = () => {
             <h3 className="font-serif text-xl font-bold text-[#8B6914] italic mb-4">
               Tanzania weather in {current.label}
             </h3>
-            <p className="text-[#4A4035] text-[14.5px] leading-[1.9]">{current.desc}</p>
+            <p className="text-[#4A4035] text-[15px] leading-[1.9]">{current.desc}</p>
           </div>
         </div>
 

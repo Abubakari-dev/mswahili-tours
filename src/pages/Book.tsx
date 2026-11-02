@@ -51,22 +51,22 @@ export const Book: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#050E1C]/70 via-transparent to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
+          <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.35em] uppercase mb-5 animate-fadeInUp stagger-1">
             Mswahili Tours &amp; Safaris
           </p>
           <h1
             className="text-white leading-[1.05] mb-6 animate-fadeInUp stagger-2"
             style={{
-              fontFamily: "'Fraunces', Georgia, serif",
+              fontFamily: 'var(--font-serif)',
               fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-              fontWeight: 300,
+              fontWeight: 500,
               fontStyle: 'italic',
               textShadow: '0 2px 32px rgba(0,0,0,0.40)',
             }}
           >
             Plan Your Safari
           </h1>
-          <p className="text-white/65 text-[15px] sm:text-[16px] max-w-xl mx-auto leading-relaxed font-light animate-fadeInUp stagger-3">
+          <p className="text-white/65 text-[16px] sm:text-[16px] max-w-xl mx-auto leading-relaxed font-light animate-fadeInUp stagger-3">
             Tell us about your dream Tanzania adventure and our team will craft a personalised itinerary just for you.
           </p>
         </div>
@@ -91,18 +91,18 @@ export const Book: React.FC = () => {
                     Asante! We'll Be In Touch
                   </h2>
                   <div className="w-10 h-[3px] bg-[#C8A45C] mx-auto mb-6" />
-                  <p className="text-[#4A4035] text-[14.5px] leading-[1.9] max-w-sm mx-auto mb-8">
+                  <p className="text-[#4A4035] text-[15px] leading-[1.9] max-w-sm mx-auto mb-8">
                     Your inquiry has been received. Our safari team will send your custom proposal within 24 hours.
                   </p>
                   <button
                     onClick={() => { setIsSubmitted(false); reset(); }}
-                    className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[10.5px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200">
+                    className="inline-flex items-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] text-white text-[12px] font-bold tracking-[0.18em] uppercase px-6 py-3 rounded-sm transition-colors duration-200">
                     Submit Another Inquiry
                   </button>
                 </div>
               ) : (
                 <>
-                  <p className="text-[#C8A45C] text-[11px] font-bold tracking-[0.32em] uppercase mb-4">
+                  <p className="text-[#C8A45C] text-[12.5px] font-bold tracking-[0.32em] uppercase mb-4">
                     Booking Inquiry
                   </p>
                   <h2 className="font-bold tracking-[0.08em] uppercase text-[#1B2A4A] mb-2"
@@ -195,7 +195,7 @@ export const Book: React.FC = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full flex items-center justify-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] disabled:opacity-60 text-white text-[11px] font-bold tracking-[0.18em] uppercase py-4 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(27,42,74,0.20)]">
+                      className="w-full flex items-center justify-center gap-2 bg-[#1B2A4A] hover:bg-[#0F1829] disabled:opacity-60 text-white text-[12.5px] font-bold tracking-[0.18em] uppercase py-4 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(27,42,74,0.20)]">
                       {isSubmitting
                         ? <><Loader2 className="w-4 h-4 animate-spin" /> Submitting…</>
                         : <><Send className="w-4 h-4" /> Submit Inquiry</>
@@ -212,7 +212,7 @@ export const Book: React.FC = () => {
 
               {/* Why book with us */}
               <div className="bg-white rounded-2xl border border-[#EAE4D9] p-7">
-                <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.32em] uppercase mb-4">
+                <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.32em] uppercase mb-4">
                   Why Book With Us
                 </p>
                 <h3 className="font-bold tracking-[0.06em] uppercase text-[#1B2A4A] mb-4"
@@ -233,7 +233,7 @@ export const Book: React.FC = () => {
                       <div className="w-5 h-5 rounded-full bg-[#C8A45C]/15 border border-[#C8A45C]/30 flex items-center justify-center flex-shrink-0">
                         <Check className="w-3 h-3 text-[#C8A45C]" />
                       </div>
-                      <span className="text-[#4A4035] text-[13px]">{item}</span>
+                      <span className="text-[#4A4035] text-[14px]">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -241,7 +241,7 @@ export const Book: React.FC = () => {
 
               {/* Contact */}
               <div className="bg-[#1B2A4A] rounded-2xl p-7">
-                <p className="text-[#C8A45C] text-[10px] font-bold tracking-[0.32em] uppercase mb-4">
+                <p className="text-[#C8A45C] text-[12px] font-bold tracking-[0.32em] uppercase mb-4">
                   Reach Us Directly
                 </p>
                 <div className="space-y-4">
@@ -255,7 +255,7 @@ export const Book: React.FC = () => {
                       <div className="w-8 h-8 rounded-xl bg-[#C8A45C]/15 flex items-center justify-center flex-shrink-0 group-hover:bg-[#C8A45C]/25 transition-colors">
                         <Icon className="w-3.5 h-3.5 text-[#C8A45C]" />
                       </div>
-                      <span className="text-[13px] font-medium">{text}</span>
+                      <span className="text-[14px] font-medium">{text}</span>
                     </a>
                   ))}
                 </div>
@@ -274,7 +274,7 @@ export const Book: React.FC = () => {
 /* ── Helpers ─────────────────────────────────────── */
 const inputCls = (hasError: boolean) => [
   'w-full rounded-xl border bg-white px-4 py-3',
-  'text-[13.5px] text-[#1B2A4A] placeholder:text-[#9B8E80]',
+  'text-[14px] text-[#1B2A4A] placeholder:text-[#9B8E80]',
   'focus:outline-none focus:ring-2 focus:ring-[#C8A45C]/30 focus:border-[#C8A45C]',
   'transition-colors duration-200',
   hasError ? 'border-red-400' : 'border-[#EAE4D9] hover:border-[#C8A45C]/50',
@@ -287,10 +287,10 @@ const Field: React.FC<{
   children: React.ReactNode;
 }> = ({ label, required, error, children }) => (
   <div>
-    <label className="block text-[10px] font-bold tracking-[0.18em] uppercase text-[#6B6259] mb-1.5">
+    <label className="block text-[12px] font-bold tracking-[0.18em] uppercase text-[#6B6259] mb-1.5">
       {label}{required && <span className="text-red-400 ml-0.5">*</span>}
     </label>
     {children}
-    {error && <p className="mt-1.5 text-[11px] text-red-500">{error}</p>}
+    {error && <p className="mt-1.5 text-[12.5px] text-red-500">{error}</p>}
   </div>
 );

@@ -29,7 +29,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       role="dialog"
       aria-modal="true"
       aria-label="Mobile navigation menu"
-      className="fixed inset-0 z-50 md:hidden flex flex-col bg-[#0B1323] text-white overflow-y-auto"
+      className="fixed inset-0 z-50 md:hidden flex flex-col font-nav bg-[#0B1323] text-white overflow-y-auto"
     >
       {/* ── Top bar ─────────────────────────────── */}
       <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
@@ -37,8 +37,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           <img src={logo} alt="Mswahili Tours"
             className="w-9 h-9 rounded-full object-cover ring-2 ring-[#C8A45C]/50 group-hover:ring-[#C8A45C] transition-all" />
           <div className="leading-tight">
-            <p className="font-serif font-bold text-white text-[15px] group-hover:text-[#C8A45C] transition-colors">Mswahili</p>
-            <p className="font-serif italic text-[#C8A45C] text-[11px] -mt-0.5">Tours &amp; Safaris</p>
+            <p className="font-nav font-bold text-white text-[16px] group-hover:text-[#C8A45C] transition-colors">Mswahili</p>
+            <p className="font-nav italic text-[#C8A45C] text-[12.5px] -mt-0.5">Tours &amp; Safaris</p>
           </div>
         </Link>
         <button onClick={onClose} aria-label="Close menu"
@@ -65,18 +65,18 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       {/* ── Bottom CTA ──────────────────────────── */}
       <div className="px-6 pb-8 pt-4 space-y-4 border-t border-white/10">
         <Link to="/book" onClick={onClose}
-          className="block w-full text-center py-4 rounded-xl bg-[#C8A45C] hover:bg-[#b8913f] text-[#0F1829] font-bold tracking-[0.12em] uppercase text-[13px] transition-colors duration-200 shadow-[0_4px_16px_rgba(200,164,92,0.30)]">
+          className="block w-full text-center py-4 rounded-xl bg-[#C8A45C] hover:bg-[#b8913f] text-[#0F1829] font-bold tracking-[0.12em] uppercase text-[14px] transition-colors duration-200 shadow-[0_4px_16px_rgba(200,164,92,0.30)]">
           Plan a Trip
         </Link>
 
         <div className="flex flex-col gap-2">
           <a href="tel:+255750877628"
-            className="flex items-center gap-2.5 text-[12px] text-white/45 hover:text-[#C8A45C] transition-colors py-1">
+            className="flex items-center gap-2.5 text-[13px] text-white/45 hover:text-[#C8A45C] transition-colors py-1">
             <Phone className="w-3.5 h-3.5 text-[#C8A45C]" />
             +255 750 877 628
           </a>
           <a href="mailto:info@mswahilitours.co.tz"
-            className="flex items-center gap-2.5 text-[12px] text-white/45 hover:text-[#C8A45C] transition-colors py-1">
+            className="flex items-center gap-2.5 text-[13px] text-white/45 hover:text-[#C8A45C] transition-colors py-1">
             <Mail className="w-3.5 h-3.5 text-[#C8A45C]" />
             info@mswahilitours.co.tz
           </a>

@@ -26,17 +26,17 @@ export const Footer: React.FC = () => {
                 <p className="font-serif font-bold text-[17px] text-white group-hover:text-[#C8A45C] transition-colors duration-200 tracking-tight">
                   Mswahili
                 </p>
-                <p className="font-serif italic text-[#C8A45C]/80 text-[12px] -mt-0.5">
+                <p className="font-serif italic text-[#C8A45C]/80 text-[13px] -mt-0.5">
                   Tours &amp; Safaris
                 </p>
               </div>
             </Link>
 
-            <p className="text-[13px] text-white/50 leading-[1.8] max-w-[260px]">
+            <p className="text-[14px] text-white/50 leading-[1.8] max-w-[260px]">
               Luxury safaris, mountain expeditions and tropical Zanzibar getaways — authentically Tanzanian, owned and operated since 2015.
             </p>
 
-            <p className="text-[12px] font-serif italic text-[#C8A45C]/70">
+            <p className="text-[13px] font-serif italic text-[#C8A45C]/70">
               "Discover Africa, Live the Experience"
             </p>
 
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
 
           {/* ── Col 2: Explore ───────────────────── */}
           <div>
-            <h4 className="text-[10px] font-bold tracking-[0.25em] uppercase text-white mb-5 pb-3 border-b border-white/10">
+            <h4 className="text-[12px] font-bold tracking-[0.25em] uppercase text-white mb-5 pb-3 border-b border-white/10">
               Explore
             </h4>
             <ul className="space-y-2.5">
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
               ].map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to}
-                    className="text-[13px] text-white/50 hover:text-[#C8A45C] hover:translate-x-1 transition-all duration-200 inline-block">
+                    className="text-[14px] text-white/50 hover:text-[#C8A45C] hover:translate-x-1 transition-all duration-200 inline-block">
                     {label}
                   </Link>
                 </li>
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
 
           {/* ── Col 3: Safaris ───────────────────── */}
           <div>
-            <h4 className="text-[10px] font-bold tracking-[0.25em] uppercase text-white mb-5 pb-3 border-b border-white/10">
+            <h4 className="text-[12px] font-bold tracking-[0.25em] uppercase text-white mb-5 pb-3 border-b border-white/10">
               Popular Safaris
             </h4>
             <ul className="space-y-2.5">
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
               ].map(({ to, label }) => (
                 <li key={label}>
                   <Link to={to}
-                    className="text-[13px] text-white/50 hover:text-[#C8A45C] hover:translate-x-1 transition-all duration-200 inline-block">
+                    className="text-[14px] text-white/50 hover:text-[#C8A45C] hover:translate-x-1 transition-all duration-200 inline-block">
                     {label}
                   </Link>
                 </li>
@@ -105,7 +105,7 @@ export const Footer: React.FC = () => {
 
           {/* ── Col 4: Contact ───────────────────── */}
           <div>
-            <h4 className="text-[10px] font-bold tracking-[0.25em] uppercase text-white mb-5 pb-3 border-b border-white/10">
+            <h4 className="text-[12px] font-bold tracking-[0.25em] uppercase text-white mb-5 pb-3 border-b border-white/10">
               Contact Us
             </h4>
             <div className="space-y-4 mb-7">
@@ -117,11 +117,11 @@ export const Footer: React.FC = () => {
                 <div key={text} className="flex items-start gap-2.5">
                   {icon}
                   {href ? (
-                    <a href={href} className="text-[13px] text-white/50 hover:text-[#C8A45C] transition-colors duration-200">
+                    <a href={href} className="text-[14px] text-white/50 hover:text-[#C8A45C] transition-colors duration-200">
                       {text}
                     </a>
                   ) : (
-                    <span className="text-[13px] text-white/50">{text}</span>
+                    <span className="text-[14px] text-white/50">{text}</span>
                   )}
                 </div>
               ))}
@@ -129,7 +129,7 @@ export const Footer: React.FC = () => {
 
             {/* CTA */}
             <Link to="/book"
-              className="inline-flex items-center bg-[#C8A45C] hover:bg-[#b8913f] text-[#0F1829] text-[10px] font-bold tracking-[0.16em] uppercase px-5 py-2.5 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(200,164,92,0.25)]">
+              className="inline-flex items-center bg-[#C8A45C] hover:bg-[#b8913f] text-[#0F1829] text-[12px] font-bold tracking-[0.16em] uppercase px-5 py-2.5 rounded-sm transition-colors duration-200 shadow-[0_2px_12px_rgba(200,164,92,0.25)]">
               Plan a Trip →
             </Link>
           </div>
@@ -140,10 +140,10 @@ export const Footer: React.FC = () => {
       {/* ── Bottom bar ───────────────────────────── */}
       <div className="border-t border-white/8">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[11.5px] text-white/35">
+          <p className="text-[12.5px] text-white/35">
             © {year} Mswahili Tours &amp; Safaris Company Limited. All Rights Reserved.
           </p>
-          <p className="text-[11px] text-[#C8A45C]/50 uppercase tracking-widest">
+          <p className="text-[12.5px] text-[#C8A45C]/50 uppercase tracking-widest">
             Tanzania Tourist Board Licensed Operator
           </p>
         </div>
